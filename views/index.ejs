@@ -9,6 +9,20 @@
 <body>
     <h1>Hello EJS</h1>
 
-    <a href="/admin">ADM</a>
+    <a href="/admin">Administrar musicas</a>
+
+        <% playlist.forEach((music) => {  %>
+            <section>
+                    <h2>
+                        <%= music.name%>
+                    </h2>
+                    <p>
+                        <%= music.autor%>
+                    </p>
+                    <img src="<%= music.linkImage%>" alt="Imagem da Musica">
+                    <audio controls src="<%= music.linkMusic%>"></audio>
+            </section>                    
+        <% }) %>    
+
 </body>
 </html>

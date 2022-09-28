@@ -19,8 +19,11 @@ app.use(express.urlencoded());
 
 connectToDb();
 
-app.get('/', (req, res) => {
-    res.render("index");
+//Busca um array de informações no banco de dados e traz para a variavel
+app.get('/', async (req, res) => {
+    const playlist = await Musica.find();
+    console.log(playlist);
+    res.render("index", { playlist });
 });
 
 app.get("/admin", (req, res) => {
