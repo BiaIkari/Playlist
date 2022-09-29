@@ -3,88 +3,88 @@
     padding: 0;
     font-family: Arial;
 }
-body {
+body{
     background-color: #300441;
     color: #fff;
 }
-nav ul {
+nav ul{
     padding: 1rem;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
-nav ul li img {
+nav ul li img{
     width: 20%;
 }
-nav ul li i {
+nav ul li i{
     font-size: 1.5rem;
 }
-nav a {
+nav a{
     text-decoration: none;
     color:#fff;
 }
-section#player {
+section#player{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     padding-bottom: 10rem;
 }
-section#player h1 {
+section#player h1{
     width: 100%;
     text-align: center;
     padding: 0 0 5rem 0;
     font-size: 3rem;
     font-weight: 100;
 }
-section#player div {
+section#player div{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-section#player div img#currentImg {
+section#player div img#currentImg{
     width: 25rem;
     height: 2
 }
-section#player div h2#currentName {
+section#player div h2#currentName{
     width: 100%;
     text-align: center;
     padding: 1rem 0 0.5rem 0;
     font-size: 2rem;
 }
-section#player table {
+section#player table{
     border-collapse: collapse;
     border-spacing: 0;
     width: 50rem;
 }
-section#player table th, td {
+section#player table th, td{
     padding: 1rem;
     border-bottom: 1px solid #ddd;
     text-align: left;
 }
-section#player table td img {
+section#player table td img{
     width: 3rem;
 }
-section#add {
+section#add{
     padding: 3rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
-section#add h2 {
+section#add h2{
     width: 100%;
     padding: 0 0 5rem 0;
     font-size: 3rem;
     font-weight: 100;
     text-align: center;
 }
-form {
+form{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
 }
-form input {
+form input{
     width: 100%;
     padding: 0,5rem;
     margin: 0.3rem 1rem 1rem 1rem;
@@ -92,12 +92,12 @@ form input {
     border: solid 1px #0071a5;
     outline: none;
 }
-form label {
+form label{
     margin: 0 1rem 0 1 rem;
     font-size: 1.3rem;
     color:#fff;
 }
-form button {
+form button{
     border: solid 2px #00a53f;
     padding: 6rem;
     font-size: 1.2rem;
@@ -110,11 +110,11 @@ form button {
     width: 70%;
     cursor: pointer;
 }
-form button:hover {
+form button:hover{
     background-color: #00a53f;
     color: #fff;
 }
-section#player h2 {
+section#player h2{
     width: 100%;
     text-align: center;
     padding: 0 0 5rem 0;
@@ -129,4 +129,55 @@ td#actions a{
     padding: 0.5rem;
     border-radius: 0.3rem;
     transition: all 0.2s ease-in-out;
+}
+a#edit:hover{
+    background-color: #0044ff;
+    border: 1px solid #0044ff;
+}
+a#delete:hover{
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+section#modal{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #00000090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#modal div#card{
+    width: 50%;
+    position: relative;
+    background-color: #202024;
+    border-radius: 0.5rem;
+}
+section#modal div#card h2{
+    padding: 2rem;
+    margin: 0;
+    color: #ffffff;
+}
+section#modal div#car a#close-modal{
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding: 1.5rem;
+}
+section#modal div#car a#close-modal:hover{
+    color: #ff0000;
+}
+
+section#modal div#card hr {
+    width: 90%;
+    margin: 0 auto;
+}
+form#form-modal {
+    width: 100%;
+    padding: 2rem 0;
 }
