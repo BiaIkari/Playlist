@@ -6,10 +6,10 @@ Projeto Playlist
 
 Playlist construída usando Node.js, Express e MongoDB Atlas.
 
-Documentação:
-Node.js - https://nodejs.org/en/
-Express - https://expressjs.com/
-MongoDB Atlas - https://www.mongodb.com/pt-br/cloud/atlas/efficiency
+Maiores informações e documentação:
+* Node.js - https://nodejs.org/en/
+* Express - https://expressjs.com/
+* MongoDB Atlas - https://www.mongodb.com/pt-br/cloud/atlas/efficiency
 
 
 ## Instalação e execução
